@@ -1,0 +1,27 @@
+CREATE DATABASE NETFLIX;
+USE NETFLIX;
+
+CREATE TABLE series(
+name varchar(20),
+Ranks int
+);
+
+INSERT INTO series(name, Ranks)
+VALUES
+("NARUTO", 5),
+("DEMON SLAYER", 4);
+
+ALTER TABLE series
+ADD COLUMN stars int;
+
+SELECT * FROM series;
+
+ALTER TABLE series
+DROP COLUMN Ranks;
+
+SELECT * FROM series;
+
+ALTER TABLE series
+RENAME TO ANIME;
+
+SELECT * FROM ANIME;
